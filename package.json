@@ -17,5 +17,9 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "npm": "^6.1.0",
+    "slick-carousel": "^1.8.1"
   }
 }
