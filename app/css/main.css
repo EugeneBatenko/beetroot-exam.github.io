@@ -67,9 +67,10 @@ header {
       font-style: italic; }
 
 main {
+  background-color: #ebebeb;
   width: 100%; }
   main .about {
-    margin-top: 120px;
+    padding-top: 120px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap; }
@@ -183,10 +184,79 @@ main {
     background-image: url("../img/works-bg.jpg");
     background-size: cover;
     width: 100%;
-    height: 1000px; }
+    height: 1000px;
+    overflow: hidden; }
     main .works .header-works {
       padding-top: 50px;
       text-align: center; }
       main .works .header-works .header-works__title {
         color: #fefcfd;
         font-size: 36px; }
+    main .works .works__slider {
+      width: 730px;
+      height: 546px;
+      margin: 0 auto; }
+      @media screen and (max-width: 960px) {
+        main .works .works__slider {
+          width: 547.5px;
+          height: 409.5px; } }
+      @media screen and (max-width: 730px) {
+        main .works .works__slider {
+          width: 321.2px;
+          height: 240.24px; } }
+      main .works .works__slider .slick-dots li button {
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+        opacity: 1; }
+        main .works .works__slider .slick-dots li button:before {
+          line-height: 15px;
+          width: 0;
+          font-size: 12px;
+          color: white; }
+      main .works .works__slider .slick-dots .slick-active:before {
+        opacity: 1; }
+      main .works .works__slider .slick-dots .slick-active button:before {
+        opacity: 1;
+        color: white; }
+    main .works img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    main .works svg {
+      fill: #e6e6e6;
+      cursor: pointer; }
+      main .works svg:hover {
+        fill: #BC204B; }
+    main .works .next {
+      position: absolute;
+      top: 50%;
+      right: -15%; }
+    main .works .prev {
+      position: absolute;
+      top: 50%;
+      left: -15%; }
+    main .works .button-block {
+      display: flex;
+      justify-content: center; }
+      main .works .button-block .works-button {
+        margin-top: 120px;
+        padding: 18px 54px;
+        text-decoration: none;
+        color: #7d7a7c;
+        font-style: italic;
+        border: 1px solid #7d7a7c;
+        transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out; }
+        main .works .button-block .works-button:hover {
+          transition: all 0.6s ease-in-out;
+          -moz-transition: all 0.6s ease-in-out;
+          color: #BC204B;
+          border: 1px solid #BC204B; }
+  main .our-team {
+    padding-top: 54px;
+    text-align: center; }
+    main .our-team h3 {
+      color: #665f60;
+      font-size: 36px; }
