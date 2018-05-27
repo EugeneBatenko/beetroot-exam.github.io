@@ -32,12 +32,18 @@ header {
     .logo {
       .logo-link {
         svg {
-          transition: all 0.6s ease-in-out;
+          -webkit-transition: all 0.6s ease-in-out;
           -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
           fill: #f6f6f6;
           &:hover #logo-icon {
-            transition: all 0.6s ease-in-out;
+            -webkit-transition: all 0.6s ease-in-out;
             -moz-transition: all 0.6s ease-in-out;
+            -ms-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
             fill: #bc204b;
           }
         }
@@ -58,8 +64,16 @@ header {
         a {
           text-decoration: none;
           color: white;
+          -webkit-transition: all 0.6s ease-in-out;
+          -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out;
           &:hover {
+            -webkit-transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -ms-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
             transition: all 0.6s ease-in-out;
             color: #BC204B;
           }
@@ -150,14 +164,20 @@ main {
         color: #7d7a7c;
         font-style: italic;
         border: 1px solid #7d7a7c;
-        transition: all 0.6s ease-in-out;
+        -webkit-transition: all 0.6s ease-in-out;
         -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
         @media screen and (max-width: 920px) {
           margin: 5px auto 0 auto;
         }
         &:hover {
-          transition: all 0.6s ease-in-out;
+          -webkit-transition: all 0.6s ease-in-out;
           -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
           color: #BC204B;
           border: 1px solid #BC204B;
         }
@@ -323,11 +343,17 @@ main {
         color: #7d7a7c;
         font-style: italic;
         border: 1px solid #7d7a7c;
-        transition: all 0.6s ease-in-out;
+        -webkit-transition: all 0.6s ease-in-out;
         -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
         &:hover {
-          transition: all 0.6s ease-in-out;
+          -webkit-transition: all 0.6s ease-in-out;
           -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
           color: #BC204B;
           border: 1px solid #BC204B;
         }
@@ -492,6 +518,10 @@ main {
           opacity: 0.5;
           margin-bottom: 20px;
           font-style: italic;
+          &:focus {
+            color: white;
+            background-color: black;
+          }
           @media screen and (max-width: 810px) {
             width: 320px;
           }
@@ -506,6 +536,10 @@ main {
           opacity: 0.5;
           font-style: italic;
           resize: vertical;
+          &:focus {
+            color: white;
+            background-color: black;
+          }
         }
         .send-button {
           margin-top: 55px;
@@ -559,9 +593,17 @@ main {
         top: 291px;
         right: -257px;
         color: white;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         &:hover {
           right: 0;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
         }
         .visible-part {
@@ -618,8 +660,16 @@ footer {
         background-color: white;
         color: #9f9acf;
         border-radius: 50%;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out;
         &:hover {
+          -webkit-transition: all 0.6s ease-in-out;
+          -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out;
           background-color: #BC204B;
         }

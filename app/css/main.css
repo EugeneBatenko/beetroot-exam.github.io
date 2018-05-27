@@ -26,12 +26,18 @@ header {
     height: 72px;
     z-index: 1000; }
     header nav .logo .logo-link svg {
-      transition: all 0.6s ease-in-out;
+      -webkit-transition: all 0.6s ease-in-out;
       -moz-transition: all 0.6s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out;
       fill: #f6f6f6; }
       header nav .logo .logo-link svg:hover #logo-icon {
-        transition: all 0.6s ease-in-out;
+        -webkit-transition: all 0.6s ease-in-out;
         -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out;
         fill: #bc204b; }
     header nav .menu {
       list-style: none;
@@ -48,8 +54,16 @@ header {
         header nav .menu .menu__item a {
           text-decoration: none;
           color: white;
+          -webkit-transition: all 0.6s ease-in-out;
+          -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out; }
           header nav .menu .menu__item a:hover {
+            -webkit-transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            -ms-transition: all 0.6s ease-in-out;
+            -o-transition: all 0.6s ease-in-out;
             transition: all 0.6s ease-in-out;
             color: #BC204B; }
   header .header-text {
@@ -126,14 +140,20 @@ main {
         color: #7d7a7c;
         font-style: italic;
         border: 1px solid #7d7a7c;
-        transition: all 0.6s ease-in-out;
-        -moz-transition: all 0.6s ease-in-out; }
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out; }
         @media screen and (max-width: 920px) {
           main .about .about__content .button {
             margin: 5px auto 0 auto; } }
         main .about .about__content .button:hover {
-          transition: all 0.6s ease-in-out;
+          -webkit-transition: all 0.6s ease-in-out;
           -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
           color: #BC204B;
           border: 1px solid #BC204B; }
   main .services {
@@ -265,11 +285,17 @@ main {
         color: #7d7a7c;
         font-style: italic;
         border: 1px solid #7d7a7c;
-        transition: all 0.6s ease-in-out;
-        -moz-transition: all 0.6s ease-in-out; }
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out; }
         main .works .button-block .works-button:hover {
-          transition: all 0.6s ease-in-out;
+          -webkit-transition: all 0.6s ease-in-out;
           -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out;
           color: #BC204B;
           border: 1px solid #BC204B; }
   main .our-team {
@@ -406,6 +432,9 @@ main {
         opacity: 0.5;
         margin-bottom: 20px;
         font-style: italic; }
+        main .contact .contact__form form .user-data:focus {
+          color: white;
+          background-color: black; }
         @media screen and (max-width: 810px) {
           main .contact .contact__form form .user-data {
             width: 320px; } }
@@ -419,6 +448,9 @@ main {
         opacity: 0.5;
         font-style: italic;
         resize: vertical; }
+        main .contact .contact__form form .massage:focus {
+          color: white;
+          background-color: black; }
       main .contact .contact__form form .send-button {
         margin-top: 55px;
         width: 292px;
@@ -460,9 +492,17 @@ main {
       top: 291px;
       right: -257px;
       color: white;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
       main .contact .side-buttons .side-buttons__mobile:hover {
         right: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
       main .contact .side-buttons .side-buttons__mobile .visible-part {
         width: 91px;
@@ -508,8 +548,16 @@ footer {
         background-color: white;
         color: #9f9acf;
         border-radius: 50%;
+        -webkit-transition: all 0.6s ease-in-out;
+        -moz-transition: all 0.6s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
         transition: all 0.6s ease-in-out; }
         footer .footer-socmed a i:hover {
+          -webkit-transition: all 0.6s ease-in-out;
+          -moz-transition: all 0.6s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
           transition: all 0.6s ease-in-out;
           background-color: #BC204B; }
   footer .return-button #return-to-top {
