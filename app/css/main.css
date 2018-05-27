@@ -60,11 +60,23 @@ header {
       margin: 0;
       font-size: 72px;
       line-height: 60.22px; }
+      @media screen and (max-width: 1024px) {
+        header .header-text h1 {
+          font-size: 60px; } }
+      @media screen and (max-width: 540px) {
+        header .header-text h1 {
+          font-size: 40px; } }
     header .header-text p {
       margin: 0;
       padding-top: 20px;
       font-size: 30px;
       font-style: italic; }
+      @media screen and (max-width: 1024px) {
+        header .header-text p {
+          font-size: 20px; } }
+      @media screen and (max-width: 540px) {
+        header .header-text p {
+          font-size: 18px; } }
 
 main {
   background-color: #ebebeb;
@@ -97,6 +109,9 @@ main {
       flex-direction: column; }
       main .about .about__content .about-paragraph:first-child {
         padding-top: 58px; }
+        @media screen and (max-width: 920px) {
+          main .about .about__content .about-paragraph:first-child {
+            padding-top: 0; } }
       main .about .about__content .about-paragraph {
         margin: 0 auto;
         padding: 2% 7.5%;
@@ -113,6 +128,9 @@ main {
         border: 1px solid #7d7a7c;
         transition: all 0.6s ease-in-out;
         -moz-transition: all 0.6s ease-in-out; }
+        @media screen and (max-width: 920px) {
+          main .about .about__content .button {
+            margin: 5px auto 0 auto; } }
         main .about .about__content .button:hover {
           transition: all 0.6s ease-in-out;
           -moz-transition: all 0.6s ease-in-out;
@@ -412,7 +430,7 @@ main {
       align-items: center;
       position: absolute;
       top: 200px;
-      right: -185px;
+      right: -257px;
       color: white;
       transition: all 0.3s ease-in-out; }
       main .contact .side-buttons .side-buttons__home:hover {
@@ -425,14 +443,18 @@ main {
         display: flex;
         justify-content: center;
         align-items: center; }
-        main .contact .side-buttons .side-buttons__home .visible-part .hidden-part {
-          background-color: #ebebeb; }
+      main .contact .side-buttons .side-buttons__home .hidden-part {
+        width: 257px;
+        height: 91px;
+        background-color: #ebebeb; }
+        main .contact .side-buttons .side-buttons__home .hidden-part p {
+          color: black; }
     main .contact .side-buttons .side-buttons__mobile {
       display: flex;
       align-items: center;
       position: absolute;
       top: 291px;
-      right: -185px;
+      right: -257px;
       color: white;
       transition: all 0.3s ease-in-out; }
       main .contact .side-buttons .side-buttons__mobile:hover {
@@ -445,8 +467,12 @@ main {
         display: flex;
         justify-content: center;
         align-items: center; }
-        main .contact .side-buttons .side-buttons__mobile .visible-part .hidden-part {
-          background-color: #ebebeb; }
+      main .contact .side-buttons .side-buttons__mobile .hidden-part {
+        width: 257px;
+        height: 91px;
+        background-color: #ebebeb; }
+        main .contact .side-buttons .side-buttons__mobile .hidden-part p {
+          color: black; }
 
 footer {
   margin: 0;
@@ -454,6 +480,7 @@ footer {
   background-color: #9f9acf;
   width: 100%;
   height: 185px;
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -481,3 +508,13 @@ footer {
         footer .footer-socmed a i:hover {
           transition: all 0.6s ease-in-out;
           background-color: #BC204B; }
+  footer .return-button #return-to-top {
+    position: absolute;
+    right: 10px;
+    top: -130px;
+    width: 84px;
+    height: 84px;
+    background-color: #9f9acf;
+    display: flex;
+    justify-content: center;
+    align-items: center; }

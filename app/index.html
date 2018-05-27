@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/img/logo.svg" type="image/svg">
+    <!--yes it's piracy, but not commercial, only for personal use. All rights reserved beetroot comapany.-->
+    <link rel="icon" href="https://beetroot.se/wp-content/uploads/2016/04/cropped-favicon-150x150.png" sizes="32x32">
     <title>CREATIVE DIGITAL PROJECT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -23,11 +24,11 @@
                 </a>
             </div>
             <ul class="menu">
-                <li class="menu__item"><a href="#">HOME</a></li>
-                <li class="menu__item"><a href="#">ABOUT</a></li>
-                <li class="menu__item"><a href="#">SERVICES</a></li>
-                <li class="menu__item"><a href="#">WORKS</a></li>
-                <li class="menu__item"><a href="#">CONTACTS</a></li>
+                <li class="menu__item"><a href="javascript:" id="go-to-home">HOME</a></li>
+                <li class="menu__item"><a href="javascript:" id="go-to-about">ABOUT</a></li>
+                <li class="menu__item"><a href="javascript:" id="go-to-services">SERVICES</a></li>
+                <li class="menu__item"><a href="javascript:" id="go-to-works">WORKS</a></li>
+                <li class="menu__item"><a href="javascript:" id="go-to-contacts">CONTACTS</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -126,10 +127,10 @@
                 <h3 class="header-works__title">RECENT WORKS</h3>
             </div>
             <div class="works__slider">
-                <div><img src="../app/img/work-slider-img.jpg" alt="work-slider-img"></div>
-                <div><img src="../app/img/work-slider-img.jpg" alt="work-slider-img"></div>
-                <div><img src="../app/img/work-slider-img.jpg" alt="work-slider-img"></div>
-                <div><img src="../app/img/work-slider-img.jpg" alt="work-slider-img"></div>
+                <div><img src="../img/work-slider-img.jpg" alt="work-slider-img"></div>
+                <div><img src="../img/work-slider-img.jpg" alt="work-slider-img"></div>
+                <div><img src="../img/work-slider-img.jpg" alt="work-slider-img"></div>
+                <div><img src="../img/work-slider-img.jpg" alt="work-slider-img"></div>
             </div>
             <!--This div for positioning button, because slick-slider impact on button-->
             <div class="button-block">
@@ -149,7 +150,7 @@
                 <div class="person-card">
                     <!--Empty for absolute image, becouse, slick do overflow:hidden -->
                     <div class="empty"></div>
-                    <img src="../app/img/guy-in-hat.jpg" alt="Guy in hat">
+                    <img src="../img/guy-in-hat.jpg" alt="Guy in hat">
                     <h3>Miguel Obrien</h3>
                     <span>CEO & Founder</span>
                     <div class="person-card__buttons">
@@ -161,7 +162,7 @@
                 </div>
                 <div class="person-card">
                     <div class="empty"></div>
-                    <img src="../app/img/red-girl.jpg" alt="Red girl">
+                    <img src="../img/red-girl.jpg" alt="Red girl">
                     <h3>Jackie Carroll</h3>
                     <span>Art Director</span>
                     <div class="person-card__buttons">
@@ -174,7 +175,7 @@
                 </div>
                 <div class="person-card">
                     <div class="empty"></div>
-                    <img src="../app/img/smile-girl.jpg" alt="Smile girl">
+                    <img src="../img/smile-girl.jpg" alt="Smile girl">
                     <h3>Ida Morrison</h3>
                     <span>Designer</span>
                     <div class="person-card__buttons">
@@ -189,7 +190,7 @@
                 <div class="person-card">
                     <!--Empty for absolute image, becouse, slick do overflow:hidden -->
                     <div class="empty"></div>
-                    <img src="../app/img/guy-in-hat.jpg" alt="Guy in hat">
+                    <img src="../img/guy-in-hat.jpg" alt="Guy in hat">
                     <h3>Miguel Obrien</h3>
                     <span>CEO & Founder</span>
                     <div class="person-card__buttons">
@@ -201,7 +202,7 @@
                 </div>
                 <div class="person-card">
                     <div class="empty"></div>
-                    <img src="../app/img/red-girl.jpg" alt="Red girl">
+                    <img src="../img/red-girl.jpg" alt="Red girl">
                     <h3>Jackie Carroll</h3>
                     <span>Art Director</span>
                     <div class="person-card__buttons">
@@ -214,7 +215,7 @@
                 </div>
                 <div class="person-card">
                     <div class="empty"></div>
-                    <img src="../app/img/smile-girl.jpg" alt="Smile girl">
+                    <img src="../img/smile-girl.jpg" alt="Smile girl">
                     <h3>Ida Morrison</h3>
                     <span>Designer</span>
                     <div class="person-card__buttons">
@@ -247,13 +248,12 @@
                 <div class="side-buttons">
                     <div class="side-buttons__home">
                         <div class="visible-part"><i class="fa fa-home fa-3x" aria-hidden="true"></i></div>
-                        <div class="hidden-part">Ikan Piranha Atas 220C<br>Malang - East Java<br>Indonesia</div>
+                        <div class="hidden-part"><p>Ikan Piranha Atas 220C<br>Malang - East Java<br>Indonesia</p></div>
                     </div>
                     <div class="side-buttons__mobile">
                         <div class="visible-part"><i class="fa fa-mobile fa-3x" aria-hidden="true"></i></div>
-                        <div class="hidden-part">Ikan Piranha Atas 220C<br>Malang - East Java<br>Indonesia</div>
+                        <div class="hidden-part"><p>Ikan Piranha Atas 220C<br>Malang - East Java<br></p></div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -267,13 +267,22 @@
             <a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
             <a href="https://twitter.com/"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
         </div>
+        <div class="return-button">
+            <a href="javascript:" id="return-to-top">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36"
+                     height="21" viewBox="0 0 36 21">
+                    <path id="f2mwa" transform="translate(-1411 -5288)" fill="#e6e6e6"
+                          d="M1446.5 5308.88c-.5.25-1.1.1-1.39-.35l-16.11-18.21-16.11 18.21c-.28.45-.9.6-1.38.35a.9.9 0 0 1-.37-1.28l16.92-19.13c.2-.32.57-.49.94-.47.37-.02.74.15.94.47l16.92 19.13a.9.9 0 0 1-.37 1.28z"/>
+                </svg>
+            </a>
+        </div>
     </footer>
 </div>
 <script src="https://use.fontawesome.com/ef2fa877d8.js"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
-<script src="../app/js/main.js"></script>
+<script src="../js/main.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmaXxUyBEd9gcEE6m01aaS2R9O0rg5XBM&callback=initMap">
 </script>

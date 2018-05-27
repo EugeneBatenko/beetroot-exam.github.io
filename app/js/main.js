@@ -52,4 +52,53 @@ function initMap() {
         map: map
     });
 };
+//For button "button to top"
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
 
+$('#go-to-home').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+
+$('#go-to-about').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 1190                    // Scroll to top of body
+    }, 500);
+});
+
+$('#go-to-services').click(function() {      // When arrow is clicked
+    if (document.getElementsByClassName('about') === 675) {
+        $('body,html').animate({
+            scrollTop: 1855                     // Scroll to top of body
+        }, 500);
+}
+else {
+        $('body,html').animate({
+            scrollTop: 2555                    // Scroll to top of body
+        }, 500);
+    }
+});
+
+$('#go-to-works').click(function() {      // When arrow is clicked
+
+    if(document.getElementsByClassName('services') === 1599) {
+        $('body,html').animate({
+            scrollTop : 3831                    // Scroll to top of body
+        }, 500);
+    }
+    else if (document.getElementsByClassName('services') === 2399){
+        $('body,html').animate({
+            scrollTop : 4097                    // Scroll to top of body
+        }, 500);
+    }
+    else {
+        $('body,html').animate({
+            scrollTop : 2665                    // Scroll to top of body
+        }, 500);
+    }
+});
