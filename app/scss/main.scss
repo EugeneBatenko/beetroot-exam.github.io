@@ -216,7 +216,7 @@ main {
         width: 760px;
         height: 1480px;
       }
-      @media screen and (max-width: 1140px) {
+      @media screen and (max-width: 759px) {
         order: 1;
         width: 380px;
         height: 799px;
@@ -479,6 +479,9 @@ main {
       form {
         :nth-child(2n) {
           margin-left: 4%;
+          @media screen and (max-width: 810px) {
+            margin-left: 0;
+          }
         }
         .user-data {
           background-color: #ebebeb;
@@ -498,6 +501,7 @@ main {
           border: none;
           border-radius: 5px;
           width: 90.9%;
+          min-width: 320px;
           height: 200px;
           opacity: 0.5;
           font-style: italic;
