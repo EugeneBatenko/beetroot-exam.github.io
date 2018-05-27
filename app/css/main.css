@@ -583,7 +583,7 @@ footer {
   footer .return-button #return-to-top {
     position: absolute;
     right: 10px;
-    top: -130px;
+    top: -100px;
     width: 84px;
     height: 84px;
     background-color: #9f9acf;
