@@ -460,7 +460,19 @@ main {
         border-radius: 5px;
         color: white;
         font-size: 20px;
-        letter-spacing: 0.3px; }
+        letter-spacing: 0.3px;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+        main .contact .contact__form form .send-button:hover {
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          background-color: #BC204B; }
     main .contact .side-buttons .side-buttons__home {
       display: flex;
       align-items: center;
@@ -468,9 +480,17 @@ main {
       top: 200px;
       right: -257px;
       color: white;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; }
       main .contact .side-buttons .side-buttons__home:hover {
         right: 0;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out; }
       main .contact .side-buttons .side-buttons__home .visible-part {
         width: 91px;
