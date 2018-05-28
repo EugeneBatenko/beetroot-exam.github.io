@@ -598,10 +598,15 @@ footer {
   align-items: center;
   flex-wrap: wrap; }
   footer span {
+    margin: 0 auto;
     color: white;
     font-size: 18px;
     letter-spacing: 0.36px; }
+    @media screen and (max-width: 641px) {
+      footer span {
+        text-align: center; } }
   footer .footer-socmed {
+    margin: 0 auto;
     width: 260px;
     display: flex;
     justify-content: space-around; }
