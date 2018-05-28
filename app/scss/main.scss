@@ -602,6 +602,9 @@ main {
         -ms-transition: all 0.6s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
+        @media screen and (max-width: 641px) {
+          right: -128px;
+        }
         &:hover {
           right: 0;
           -webkit-transition: all 0.3s ease-in-out;
@@ -617,13 +620,25 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 641px) {
+            width: 46px;
+            height: 46px;
+          }
         }
         .hidden-part {
           width: 257px;
           height: 91px;
           background-color: #ebebeb;
+          @media screen and (max-width: 641px) {
+            width: 128px;
+            height: 46px;
+          }
           p {
+            font-size: 18px;
             color: black;
+            @media screen and (max-width: 641px) {
+              font-size: 8px;
+            }
           }
         }
 
@@ -640,6 +655,10 @@ main {
         -ms-transition: all 0.6s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
+        @media screen and (max-width: 641px) {
+          top: 246px;
+          right: -128px;
+        }
         &:hover {
           right: 0;
           -webkit-transition: all 0.3s ease-in-out;
@@ -655,13 +674,25 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
+          @media screen and (max-width: 641px) {
+            width: 46px;
+            height: 46px;
+          }
         }
         .hidden-part {
           width: 257px;
           height: 91px;
           background-color: #ebebeb;
+          @media screen and (max-width: 641px) {
+            width: 128px;
+            height: 46px;
+          }
           p {
+            font-size: 18px;
             color: black;
+            @media screen and (max-width: 641px) {
+              font-size: 10px;
+            }
           }
         }
       }
@@ -740,6 +771,11 @@ footer {
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         background-color: #BC204B;
+      }
+      @media screen and (max-width: 641px) {
+        width: 42px;
+        height: 42px;
+        top: -80px;
       }
     }
   }
