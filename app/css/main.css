@@ -178,6 +178,10 @@ main {
         width: 380px;
         height: 400px;
         color: #665f60; }
+        @media screen and (max-width: 759px) {
+          main .services .description .services__blocks {
+            width: 320px;
+            height: 335px; } }
         main .services .description .services__blocks .headers-blocks {
           font-size: 24px; }
         main .services .description .services__blocks .blocks-paragraph {
@@ -186,8 +190,12 @@ main {
           text-align: center;
           margin: 0;
           width: 205px; }
-        main .services .description .services__blocks:first-child, main .services .description .services__blocks:last-child {
-          background-color: #dbdbdb; }
+        @media screen and (max-width: 639px) {
+          main .services .description .services__blocks:nth-child(2n-1) {
+            background-color: #dbdbdb; } }
+        @media screen and (min-width: 640px) {
+          main .services .description .services__blocks:first-child, main .services .description .services__blocks:last-child {
+            background-color: #dbdbdb; } }
     main .services .title {
       display: flex;
       flex-direction: column;
@@ -206,8 +214,13 @@ main {
       @media screen and (max-width: 759px) {
         main .services .title {
           order: 1;
-          width: 380px;
+          width: 640px;
           height: 799px; } }
+      @media screen and (max-width: 639px) {
+        main .services .title {
+          order: 1;
+          width: 320px;
+          height: 620px; } }
       main .services .title svg {
         margin-top: 105px; }
       main .services .title .header-title {
@@ -218,6 +231,10 @@ main {
         font-size: 18px;
         font-style: italic;
         text-align: center; }
+        @media screen and (max-width: 639px) {
+          main .services .title .title-paragraph {
+            width: 310px;
+            font-size: 16px; } }
   main .works {
     background-image: url("../img/works-bg.jpg");
     background-size: cover;
