@@ -47,6 +47,9 @@ header {
       flex-direction: row;
       justify-content: space-between;
       flex-wrap: wrap; }
+      @media screen and (max-width: 960px) {
+        header nav .menu {
+          display: none; } }
       header nav .menu .menu__item {
         font-size: 24px;
         line-height: 60.03px;
@@ -66,6 +69,53 @@ header {
             -o-transition: all 0.6s ease-in-out;
             transition: all 0.6s ease-in-out;
             color: #BC204B; }
+    header nav .hamburger {
+      position: relative;
+      right: 5%; }
+      header nav .hamburger .container {
+        display: none;
+        position: fixed;
+        cursor: pointer; }
+        @media screen and (max-width: 960px) {
+          header nav .hamburger .container {
+            display: block; } }
+        header nav .hamburger .container .bar1, header nav .hamburger .container .bar2, header nav .hamburger .container .bar3 {
+          width: 35px;
+          height: 5px;
+          background-color: white;
+          margin: 6px 0;
+          transition: 0.4s; }
+      header nav .hamburger .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px); }
+      header nav .hamburger .change .bar2 {
+        opacity: 0; }
+      header nav .hamburger .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px); }
+    header nav .menu-mob {
+      margin: 0;
+      padding: 0;
+      width: 320px;
+      position: fixed;
+      top: 110px;
+      right: -320px;
+      transition: all 0.6s; }
+      header nav .menu-mob .menu-mob__ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #BC204B; }
+        header nav .menu-mob .menu-mob__ul .menu-mob-ul__item {
+          text-align: center;
+          font-size: 18px;
+          padding: 15px 0; }
+          header nav .menu-mob .menu-mob__ul .menu-mob-ul__item a {
+            text-decoration: none;
+            color: white; }
+    header nav .menu-mob-onclick {
+      transition: all 0.6s;
+      right: 0; }
   header .header-text {
     margin: 298px auto 510px auto;
     text-align: center;

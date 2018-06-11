@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
     //Slider for section Works
     $('.works__slider').slick({
@@ -51,6 +52,12 @@ function initMap() {
         position: uluru,
         map: map
     });
+};
+//Hamburger menu
+var menu_mob = document.getElementById("menu-mob");
+function hamburger(x) {
+    x.classList.toggle("change");
+    menu_mob.classList.toggle("menu-mob-onclick");
 };
 //For button "button to top"
 $('#return-to-top').click(function() {      // When arrow is clicked
