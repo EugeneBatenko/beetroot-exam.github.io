@@ -71,7 +71,8 @@ header {
             color: #BC204B; }
     header nav .hamburger {
       position: relative;
-      right: 5%; }
+      right: 15%;
+      z-index: 1000; }
       header nav .hamburger .container {
         display: none;
         position: fixed;
@@ -100,7 +101,8 @@ header {
       position: fixed;
       top: 110px;
       right: -320px;
-      transition: all 0.6s; }
+      transition: all 0.6s;
+      z-index: 1000; }
       header nav .menu-mob .menu-mob__ul {
         margin: 0;
         padding: 0;

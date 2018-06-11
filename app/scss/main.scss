@@ -85,7 +85,8 @@ header {
     }
     .hamburger {
       position: relative;
-      right: 5%;
+      right: 15%;
+      z-index: 1000;
       .container {
         display: none;
         position: fixed;
@@ -123,6 +124,7 @@ header {
       top: 110px;
       right: -320px;
       transition: all 0.6s;
+      z-index: 1000;
       .menu-mob__ul {
         margin: 0;
         padding: 0;
